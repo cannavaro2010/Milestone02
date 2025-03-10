@@ -1,0 +1,68 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Video Styling */
+.ratio-16x9 iframe {
+    border-radius: 25px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Gallery Styling */
+.gallery-slider {
+    position: relative;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+    width: 40% !important; /* Force this width to override Bootstrap */
+    max-width: 200px !important; /* Limit maximum width */
+    height: auto !important; /* Maintain aspect ratio */
+    border-radius: 10px !important; /* Keep rounded corners */
+    margin: 10px auto !important; /* Center images */
+    display: block !important; /* Ensure proper alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Add a subtle shadow */
+}
+
+
+
+
+/* Gallery Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+    background-color: #6c757d;
+    color: white;
+    padding: 15px;
+}

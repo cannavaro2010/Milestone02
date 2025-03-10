@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Travel Vlogs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+   
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Travel Vlogs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="bg-primary text-white text-center py-5 mt-5">
+        <h1>Travel Vlogs</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <div class="row">
+            <!-- Blog Post Section -->
+            <div class="col-md-8 mx-auto mb-4">
+                <h2>Do you like travels ? </h2>
+                <p>The origin of the word "travel" is most likely lost to history. The term "travel" may originate from the Old French word travail, which means 'work'.[2] According to the Merriam-Webster dictionary, the first known use of the word travel was in the 14th century. It also states that the word comes from Middle English travailen, travelen (which means to torment, labor, strive, journey) and earlier from Old French travailler (which means to work strenuously, toil).
+
+                    In English, people still occasionally use the words travail, which means struggle. According to Simon Winchester in his book The Best Travelers' Tales (2004), the words travel and travail both share an even more ancient root: a Roman instrument of torture called the tripalium (in Latin it means "three stakes", as in to impale).[citation needed] This link may reflect the extreme difficulty of travel in ancient times. Travel in modern times may or may not be much easier, depending upon the destination. Travel to Mount Everest, the Amazon rainforest, extreme tourism, and adventure travel are more difficult forms of travel. 
+                    Travel can also be more difficult depending on the method of travel, such as by bus, cruise ship, or even by bullock cart.[3]</p>
+
+                <!-- Responsive Video Embed -->
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Xj4E0Zry6K4?si=6iQqUHzBcLTuenX9" 
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Photo Gallery Section -->
+            <div class="col-12">
+                <h2 class="text-center">Photo Gallery</h2>
+                <div class="gallery-slider position-relative">
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y btn btn-dark">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <div class="row g-3 justify-content-center gallery-images">
+                        <div class="col-4 col-md-3 col-lg-2 gallery-item">
+                            <img src="img/Blue_villa_in_Majorelle_garden_(2845770484).jpg" alt="Blog Photo 1" class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2 gallery-item">
+                            <img src="img/Djemaa_el_Fna.jpg" alt="Blog Photo 2" class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2 gallery-item">
+                            <img src="img/krakow-square.jpg" alt="Blog Photo 3" class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y btn btn-dark">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Travel Vlogs</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script/script.js"></script>
+</body>
+
+</html>
