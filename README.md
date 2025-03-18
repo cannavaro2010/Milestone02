@@ -26,10 +26,20 @@ Interactive Photo Gallery: Features navigation buttons and hover effects.
 
 Modern Aesthetics: Clean layout with rounded corners and subtle shadows.
 Prize :Spine wheel for users to get a change for discount or voucher or free travels packages 
-![Alt Text](img/Screenshot homepage m02.png)
 
-![Alt Text](img/Screenshot-blog page m02.png)
-![Alt Text](img/Screenshot contact page with prize .png)
+# Screenshots
+
+Here are some screenshots of the Travel Vlogs project:
+
+### Homepage
+![Homepage Screenshot](img/Screenshot homepage m02.png)
+
+### Blog Page
+![Blog Page Screenshot](img/Screenshot-blog page m02.png)
+
+### Contact Page with Prize Feature
+![Contact Page Screenshot](img/Screenshot contact page with prize .png)
+
 
 
 
