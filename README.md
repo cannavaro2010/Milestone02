@@ -32,13 +32,13 @@ Prize :Spine wheel for users to get a change for discount or voucher or free tra
 Here are some screenshots of the Travel Vlogs project:
 
 ### Homepage
-![Homepage Screenshot]([img/Screenshot homepage m02.png](https://github.com/cannavaro2010/Milestone02/blob/fea7b24f797401eb9d08390db4f4e7a8e16c2c4f/img/Screenshot%20homepage%20m02.png)
+![Homepage Screenshot]([img/Screenshot homepage m02.png](https://github.com/cannavaro2010/Milestone02/blob/fea7b24f797401eb9d08390db4f4e7a8e16c2c4f/img/Screenshot%20homepage%20m02.png
 
 ### Blog Page
-![Blog Page Screenshot]([img/Screenshot-blog page m02.png](https://github.com/cannavaro2010/Milestone02/blob/fea7b24f797401eb9d08390db4f4e7a8e16c2c4f/img/Screenshot-blog%20page%20m02.png)
+![Blog Page Screenshot]([img/Screenshot-blog page m02.png](https://github.com/cannavaro2010/Milestone02/blob/fea7b24f797401eb9d08390db4f4e7a8e16c2c4f/img/Screenshot-blog%20page%20m02.png
 
 ### Contact Page with Prize Feature
-![Contact Page Screenshot]([img/Screenshot contact page with prize .png](https://github.com/cannavaro2010/Milestone02/blob/fea7b24f797401eb9d08390db4f4e7a8e16c2c4f/img/Screenshot%20contact%20page%20with%20prize%20.png)
+![Contact Page Screenshot]([img/Screenshot contact page with prize .png](https://github.com/cannavaro2010/Milestone02/blob/fea7b24f797401eb9d08390db4f4e7a8e16c2c4f/img/Screenshot%20contact%20page%20with%20prize%20.png
 
 
 
