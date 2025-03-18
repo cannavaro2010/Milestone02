@@ -24,49 +24,87 @@ $(document).ready(function () {
         }
     );
 
-    // Gallery Slider Functionality
-    let currentIndex = 0; // Current visible image index
-    const images = $(".gallery-item img"); // Gallery images
-    const totalImages = images.length; // Total number of images
+    // Gallery Slider functionality
+    let currentIndex = 0;
+    const images = $(".gallery-item img");
+    const totalImages = images.length;
 
     function updateGallery(index) {
-        // Hide all images
-        images.hide();
-        // Show the current image
-        $(images[index]).fadeIn(300);
+        images.hide().eq(index).fadeIn(300); // Hide all images and only show the current image
+    }
+
+    function handleGalleryNavigation(direction) {
+        currentIndex = (currentIndex + direction + totalImages) % totalImages;
+        updateGallery(currentIndex);
     }
 
     // Show the first image initially
     updateGallery(currentIndex);
 
-    // Next button functionality
+    // Next and previous button functionality
     $(".carousel-control-next").click(function () {
-        currentIndex = (currentIndex + 1) % totalImages; // Loop to the first image after the last
-        updateGallery(currentIndex);
+        handleGalleryNavigation(1); // Navigate forward
     });
 
-    // Previous button functionality
     $(".carousel-control-prev").click(function () {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Loop to the last image when going backward from the first
-        updateGallery(currentIndex);
+        handleGalleryNavigation(-1); // Navigate backward
     });
 
-    // Auto slide functionality for the gallery
+    // Auto slide functionality
     let autoSlide = setInterval(function () {
-        currentIndex = (currentIndex + 1) % totalImages;
-        updateGallery(currentIndex);
+        handleGalleryNavigation(1);
     }, 3000); // Slide every 3 seconds
 
-    // Pause auto sliding when hovering over the gallery
+    // Pause auto-sliding when hovering over the gallery
     $(".gallery-slider").hover(
         function () {
-            clearInterval(autoSlide);
+            clearInterval(autoSlide); // Pause sliding when hovering
         },
         function () {
-            autoSlide = setInterval(function () {
-                currentIndex = (currentIndex + 1) % totalImages;
-                updateGallery(currentIndex);
+            autoSlide = setInterval(function () { // Resume auto sliding after hover
+                handleGalleryNavigation(1);
             }, 3000);
         }
     );
+
+    // Auto-scroll Gallery functionality
+    $(document).ready(function () {
+        let scrollAmount = 250;
+        function autoScrollGallery() {
+            $(".gallery").animate({ scrollLeft: "+=" + scrollAmount }, "slow", function() {
+                let firstImg = $(".gallery img:first");
+                $(".gallery").append(firstImg.clone());
+                firstImg.remove();
+                $(".gallery").scrollLeft(0);
+            });
+        }
+        setInterval(autoScrollGallery, 3000);
+
+        $(".next").click(function () {
+            $(".gallery").animate({ scrollLeft: "+=" + scrollAmount }, "slow");
+        });
+        $(".prev").click(function () {
+            $(".gallery").animate({ scrollLeft: "-=" + scrollAmount }, "slow");
+        });
+    });
+});
+/*prize section*/
+$(document).ready(function() {
+    const prizes = ["A Free Trip!", "10% Discount", "Free Ebook", "Mystery Gift", "Gift Card", "Free Subscription"];
+    let spinning = false;
+
+    $("#spin-wheel-btn").click(function() {
+        if (spinning) return; // Prevent multiple spins
+        spinning = true;
+
+        const randomDegree = Math.floor(Math.random() * 360) + 3600; // Ensure multiple full spins
+        const prizeIndex = Math.floor((randomDegree % 360) / (360 / prizes.length)); // Determine prize
+
+        $("#spin-wheel").css("transform", `rotate(${randomDegree}deg)`);
+
+        setTimeout(() => {
+            spinning = false;
+            $("#prize-display").text(`Congratulations! You won: ${prizes[prizeIndex]}`);
+        }, 4000); // Match the spin duration
+    });
 });
