@@ -38,7 +38,7 @@ Here are some screenshots of the Travel Vlogs project:
 ![Blog Page Screenshot](img/Screenshot-blogpagem02.png)
 
 ### Contact Page with Prize Feature
-![Contact Page Screenshot]([img/Screenshotcontactpagewithprize.png])
+![Contact Page Screenshot](img/Screenshotcontactpagewithprize.png)
 
 
 
