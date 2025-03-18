@@ -32,13 +32,13 @@ Prize :Spine wheel for users to get a change for discount or voucher or free tra
 Here are some screenshots of the Travel Vlogs project:
 
 ### Homepage
-![Homepage Screenshot]([img/Screenshothomepagem02.png])
+![Homepage Screenshot](img/Screenshothomepagem02.png)
 
 ### Blog Page
-![Blog Page Screenshot]([img/Screenshot-blog page m02.png])
+![Blog Page Screenshot](img/Screenshot-blogpagem02.png)
 
 ### Contact Page with Prize Feature
-![Contact Page Screenshot]([img/Screenshot contact page with prize .png])
+![Contact Page Screenshot]([img/Screenshotcontactpagewithprize.png])
 
 
 
