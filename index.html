@@ -1,35 +1,81 @@
+<!-- Updated index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Travel Vlogs</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Font Awesome (for social media & payment icons) -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Bootstrap Icons (alternative icons) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Travel Vlogs</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <a class="navbar-logo" href="index.html"><img src="img/logo-tower-london-big-ben.jpg" alt="logo-tower-london-big-ben"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main header -->
-    <header class="bg-primary text-white text-center py-5">
+    <!-- Main Header -->
+    <header class=" text-white text-center py-5 mt-5">
         <h1>Welcome to My Travel Vlogs</h1>
+        <svg viewBox="0 0 284.5 362.5">
+            <g id="svg-doc">
+            
+                  <path id="dottedpath" fill="none" stroke="#FFF" stroke-width="3" stroke-miterlimit="10" d="M209.833 195.513c-17.085-1.122-58.39-2.184-94.537 9.785-13.627 4.512-28.945 7.1-43.084
+                   3.492-60.386-15.41.68-94.015 28.278-55.553 17.84 24.868 17.506 63.215-12.228 84.158-14.99 9.958-33.146 8.858-49.114 1.945-11.19-4.846-28.903-14.976-35.59-27" 
+                   stroke-linecap="round" stroke-dasharray="1.993 6.976"></path>
+            
+                  <g id="spaceship">
+            
+                    <g id="plane">
+            
+                      <path fill="#FFF" stroke="#393027" stroke-width="2" stroke-miterlimit="10" d="M1.758 11.046l47.598 10.93L58.272 1.69z" stroke-linecap="round" stroke-linejoin="round"></path>
+            
+                      <path fill="#FFF" stroke="#393027" stroke-width="2" stroke-miterlimit="10" d="M1.38 11.086l46.005 34.307 1.97-23.418z" stroke-linecap="round" stroke-linejoin="round"></path>
+            
+                      <path fill="#FFF" stroke="#3A3128" stroke-width="2" stroke-miterlimit="10" d="M49.615 21.527l5.382 8.716-5.81-1.483z" stroke-linecap="round" stroke-linejoin="round"></path>
+            
+                      <path fill="#3A3128" d="M22.252 21.247c-.237.145-.533.198-.827.125l-1.37-.333c-.587-.15-.945-.74-.803-1.33.144-.59.736-.95 
+                        1.323-.8l1.37.333c.587.15.945.74.803 1.33z"></path>
+               <!-- Define the motion path animation -->
+                <animateMotion 
+                               xlink:href="#spaceship"
+                               dur="5s" 
+                               repeatCount="indefinite" 
+                               rotate="auto">
+                  <mpath xlink:href="#dottedpath" />
+                </animateMotion >
+                    </g>
+            
+                  </g>
+            
+                </g></svg>
+
+
+
     </header>
-    
+
     <!-- Main content area -->
     <main class="container mt-5">
         <section>
@@ -37,61 +83,57 @@
             <div class="row">
                 <div class="col-md-4 destination">
                     <img src="img/Djemaa_el_Fna.jpg" alt="Destination 1" class="img-fluid rounded shadow" loading="lazy">
-                    <p>Morocco,[d] officially the Kingdom of Morocco,[e] is a country in the Maghreb region of North Africa. It overlooks the Mediterranean Sea to the north and the Atlantic Ocean to the west, and has land borders with Algeria to the east, and the disputed territory of Western Sahara to the south. Morocco also claims the Spanish exclaves of Ceuta, Melilla and Peñón de Vélez de la Gomera, and several small Spanish-controlled islands off its coast.[17] It has a population of approximately 37 million. Islam is both the official and predominant religion, while Arabic and Berber are the official languages. Additionally, French and the Moroccan dialect of Arabic are widely spoken. The culture of Morocco is a mix of Arab, Berber, African and European cultures. Its capital is Rabat, while its largest city is Casablanca.[18]
-
-                        The region constituting Morocco has been inhabited since the Paleolithic era over 300,000 years ago.
-                         The Idrisid dynasty was established by Idris I in 788 and Morocco was subsequently ruled by a series of other independent dynasties, reaching its zenith as a regional power in the 11th and 12th centuries,
-                          under the Almoravid and Almohad dynasties, when it controlled most of the Iberian peninsula and the Maghreb.[19] 
-                          Centuries of Arab migration to the Maghreb since the 7th century shifted the demographic scope of the region. 
-                          In the 15th and 16th centuries, Morocco faced external threats to its sovereignty, 
-                          with Portugal seizing some territory and the Ottoman Empire encroaching from the east. 
-                          The Marinid and Saadi dynasties otherwise resisted foreign domination, and Morocco was the only North African nation to escape Ottoman dominion.
-                           The 'Alawi dynasty, which rules the country to this day, seized power in 1631, and over the next two centuries expanded diplomatic and commercial relations with the Western world. 
-                           Morocco's strategic location near the mouth of the Mediterranean drew renewed European interest; in 1912, France and Spain divided the country into respective protectorates, 
-                           reserving an international zone in Tangier. Following intermittent riots and revolts against colonial rule,
-                            in 1956, Morocco regained its independence and reunified.
-                        
-                        Since independence, Morocco has remained relatively stable. 
-                        It has the fifth-largest economy in Africa and wields significant influence in both Africa and the Arab world; 
-                        it is considered a middle power in global affairs and holds membership in the Arab League, the Arab Maghreb Union,
-                         the Union for the Mediterranean, and the African Union.[20] Morocco is a unitary semi-constitutional monarchy with an elected
-                          parliament. The executive branch is led by the King of Morocco and the prime minister, while legislative power is vested 
-                          in the two chambers of parliament: the House of Representatives and the House of Councillors. Judicial power rests 
-                          with the Constitutional Court, which may review the validity of laws, elections, and referendums.[21] </p>
+                    <p>Morocco is a country in North Africa with a rich history and diverse culture. <a href="#" class="read-more">Read more...</a></p>
                 </div>
                 <div class="col-md-4 destination">
                     <img src="img/krakow-square.jpg" alt="Destination 2" class="img-fluid rounded shadow" loading="lazy">
-                    <p>Kraków[a] (Polish: [ˈkrakuf] ⓘ), also spelled as Cracow[b] or Krakow,[8] is the second-largest and one of the oldest cities in Poland.[9] Situated on the Vistula River in Lesser Poland Voivodeship, the city has a population of 804,237 (2023), with approximately 8 million additional people living within a 100 km (62 mi) radius.[10] Kraków was the official capital of Poland until 1596,[11] and has traditionally been one of the leading centres of Polish academic, cultural, and artistic life. Cited as one of Europe's most beautiful cities,[12] its Old Town was declared a UNESCO World Heritage Site in 1978, one of the world's first sites granted the status.
-
-                        The city began as a hamlet on Wawel Hill and was a busy trading centre of Central Europe in 985.[13] In 1038, it became the seat of Polish monarchs from the Piast dynasty, and subsequently served as the centre of administration under Jagiellonian kings and of the Polish–Lithuanian Commonwealth until the late 16th century, when Sigismund III transferred his royal court to Warsaw. With the emergence of the Second Polish Republic in 1918, Kraków reaffirmed its role as the nucleus of a national spirit. After the invasion of Poland, at the start of World War II, the newly defined Distrikt Krakau became the seat of Nazi Germany's General Government. The Jewish population was forced into the Kraków Ghetto, a walled zone from where they were sent to Nazi extermination camps such as the nearby Auschwitz, and Nazi concentration camps like Płaszów.[14] However, the city was spared from destruction. In 1978, Karol Wojtyła, archbishop of Kraków, was elevated to the papacy as Pope John Paul, the first non-Italian pope in 455 years.[15]
-                        
-                        The Old Town and historic centre of Kraków, along with the nearby Wieliczka Salt Mine, are Poland's first World Heritage Sites.[16][17] Its extensive cultural and architectural legacy across the epochs of Gothic, Renaissance, and Baroque architecture includes Wawel Cathedral and Wawel Royal Castle on the banks of the Vistula, St. Mary's Basilica, Saints Peter and Paul Church, and the largest medieval market square in Europe, Rynek Główny.[18] Kraków is home to Jagiellonian University, one of the oldest universities in the world and often considered Poland's most reputable academic institution of higher learning. The city also hosts a number of institutions of national significance, including the National Museum, Kraków Opera, Juliusz Słowacki Theatre, National Stary Theatre, and the Jagiellonian Library.
-                        
-                        Kraków is classified as a global city with the ranking of "high sufficiency" by the Globalization and World Cities Research Network.[19] The city is served by John Paul II International Airport, the country's second busiest airport and the most important international airport for the inhabitants of south-eastern Poland. In 2000, Kraków was named European Capital of Culture. In 2013, Kraków was officially approved as a UNESCO City of Literature.[20] The city hosted World Youth Day in 2016,[21] and the European Games in 2023.[22]</p>
+                    <p>Kraków, Poland, is a historic city with a deep cultural heritage. <a href="#" class="read-more">Read more...</a></p>
                 </div>
                 <div class="col-md-4 destination">
                     <img src="img/marrakech.png" alt="Destination 3" class="img-fluid rounded shadow" loading="lazy">
-                    <p>Marrakesh or Marrakech (/məˈrækɛʃ, ˌmærəˈkɛʃ/;[3] Arabic: مراكش, romanized: murrākuš, pronounced [murraːkuʃ]) is the fourth-largest city in Morocco.[2] It is one of the four imperial cities of Morocco and is the capital of the Marrakesh–Safi region. The city lies west of the foothills of the Atlas Mountains.
-
-                        The city was founded circa 1070 by Abu Bakr ibn Umar as the capital of the Almoravid dynasty. The Almoravids established the first major structures in the city and shaped its layout for centuries to come. The red walls of the city, built by Ali ibn Yusuf in 1122–1123, and various buildings constructed in red sandstone afterwards, have given the city the nickname of the "Red City" or "Ochre City". Marrakesh grew rapidly and established itself as a cultural, religious, and trading center for the Maghreb. After a period of decline, Marrakesh regained its status in the early 16th century as the capital of the Saadian dynasty, with sultans Abdallah al-Ghalib and Ahmad al-Mansur embellishing the city with an array of sumptuous monuments. Beginning in the 17th century, the city became popular among Sufi pilgrims for its seven patron saints who are buried here. In 1912, the French Protectorate in Morocco was established and T'hami El Glaoui became Pasha of Marrakesh and generally held this position until the independence of Morocco and the reestablishment of the monarchy in 1956.
-                        
-                        Marrakesh comprises an old fortified city packed with vendors and their stalls. This medina quarter is a UNESCO World Heritage Site and contains the Jemaa el-Fnaa square, a large number of souks (markets), the Kutubiyya Mosque, and many other historic and cultural sites. The city serves as a major economic center and tourist destination. Real estate and hotel development in Marrakesh have grown dramatically in the 21st century. Marrakesh is particularly popular with the French, and numerous French celebrities own property in the city.
-                        
-                        Marrakesh is served by Ménara International Airport and by Marrakesh railway station, which connects the city to Casablanca and northern Morocco. Marrakesh has several universities and schools, including Cadi Ayyad University. A number of Moroccan football clubs are here, including Najm de Marrakech, KAC Marrakech, Mouloudia de Marrakech and Chez Ali Club de Marrakech. The Marrakesh Street Circuit hosts the World Touring Car Championship, Auto GP and FIA Formula Two Championship races.</p>
+                    <p>Marrakesh is a vibrant city known for its bustling souks and rich traditions. <a href="#" class="read-more">Read more...</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 destination">
+                    <img src="img/paris02" alt="Destination 1" class="img-fluid rounded shadow" loading="lazy">
+                    <p>Morocco is a country in North Africa with a rich history and diverse culture. <a href="#" class="read-more">Read more...</a></p>
+                </div>
+                <div class="col-md-4 destination">
+                    <img src="img/rome02.jpg" alt="Destination 2" class="img-fluid rounded shadow" loading="lazy">
+                    <p>Kraków, Poland, is a historic city with a deep cultural heritage. <a href="#" class="read-more">Read more...</a></p>
+                </div>
+                <div class="col-md-4 destination">
+                    <img src="img//Old Town Gdansk Poland.jpg" alt="Destination 3" class="img-fluid rounded shadow" loading="lazy">
+                    <p>Marrakesh is a vibrant city known for its bustling souks and rich traditions. <a href="#" class="read-more">Read more...</a></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer section -->
-    <footer class="bg-secondary text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Travel Vlogs</p>
-    </footer>
+    <!-- Footer -->
+<footer class="bg-secondary text-white text-center py-3 mt-5">
+    <div class="container">
+        <!-- Social Media Icons -->
+        <div class="mb-3">
+            <a href="https://facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://youtube.com" target="_blank" class="text-white mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Payment Icons -->
+        <div class="mb-3">
+            <i class="fab fa-cc-mastercard fa-2x mx-2"></i>
+            <i class="fab fa-cc-paypal fa-2x mx-2"></i>
+        </div>
+
+        <p>&copy; 2025 Travel Vlogs</p>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>
