@@ -52,6 +52,8 @@ CSS3
 Bootstrap 5
 
 jQuery 3.7.1
+Javascript 
+Jest testing
 
 ## Installation
 Clone the repository:
@@ -60,24 +62,8 @@ bash
 git clone https://github.com/your-username/travel-blog.git
 Open index.html in your browser to view the site.
 
-File Structure
-plaintext
-travel-blog/
-│
-├── css/
-│   └── stylesheet.css  # Custom styling for the blog
-│
-├── img/
-│   ├── photo1.jpg      # Replace with your own photos
-│   ├── photo2.jpg
-│   ├── photo3.jpg
-│
-├── script/
-│   └── script.js       # Interactive functionalities with jQuery
-│
-├── index.html          # Main HTML file
-│
-└── README.md           # This documentation file
+## Wireframe Structure
+![Homepage Screenshot](img/wireframe.png)
 ## Usage
 Navigate: Explore the blog using the responsive navigation bar.
 
