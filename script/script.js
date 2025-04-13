@@ -108,3 +108,36 @@ $(document).ready(function() {
         }, 4000); // Match the spin duration
     });
 });
+
+/// Google Maps API
+
+function initialize() {
+    const location = { lat: 51.5074, lng: -0.1278 }; // Example: London
+  
+    // Standard Map
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: location,
+      zoom: 14,
+    });
+  
+    const marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: "We're here!",
+    });
+  
+    // Street View
+    const panorama = new google.maps.StreetViewPanorama(
+      document.getElementById("pano"),
+      {
+        position: location,
+        pov: {
+          heading: 34,
+          pitch: 10,
+        },
+      }
+    );
+  
+    map.setStreetView(panorama);
+  }
+  
