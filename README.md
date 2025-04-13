@@ -31,29 +31,29 @@ This project took design photos and  inspiration and reference content from:
 ## Screenshots
 
 ### Homepage  
-![Homepage Screenshot](img/Screenshot homepage.png)
+![Homepage Screenshot](img/Screenshothomepage.png)
 
 ### Blog Page  
-![Blog Page Screenshot](img/Screenshot blog.png)
+![Blog Page Screenshot](img/Screenshotblog.png)
 
 ### Contact Page with Prize Feature  
-![Contact Page Screenshot](img/Screenshot contact page.png)
+![Contact Page Screenshot](img/Screenshotcontactpage.png)
 
 ## Testing:
 ### W3C:
-![test Screenshot](img/Screenshot w3c testing css.png)
+![test Screenshot](img/Screenshotw3ctestingcss.png)
 
 ### Jslint:
-![test Screenshot](img/Jslint javascript test.jpg)
+![test Screenshot](img/Jslintjavascripttest.jpg)
 
 ### Lighthouse :
-![test Screenshot](img/lighthouse testing.png)
+![test Screenshot](img/lighthousetesting.png)
 
 ### Jest :
 ![test Screenshot](img/passing-jest-tests.jpg)
 
 ### Manual testing:
-![test Screenshot](img/Screenshot manual testing(1).jpg)
+![test Screenshot](img/Screenshotmanualtesting(1).jpg)
 
 ## Technologies Used
 - HTML5  
@@ -73,7 +73,9 @@ git clone https://github.com/your-username/travel-blog.git
 
 
 ## Wireframe Structure
+
 ![Homepage Screenshot](img/wireframe.png)
+
 ## Usage
 Navigate: Explore the blog using the responsive navigation bar.
 
