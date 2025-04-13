@@ -1,66 +1,76 @@
 
 
-#Travel Blog - Explore the World 🌍
+# Travel Blog - Explore the World 🌍
 
 ## Description
-A responsive and interactive travel blog showcasing travel experiences through captivating visuals and stories. Features include a clean navigation bar, a responsive video section, and an interactive photo gallery with navigation controls. Built with HTML, CSS, Bootstrap, and jQuery.
-## The values :
-Inspiration: Encourages people to explore the world by sharing unique experiences and stories.
+A responsive and interactive travel blog showcasing travel experiences through captivating visuals, immersive stories, and interactive features. This site includes an embedded video section, interactive photo gallery, Google Maps integration, and a spinning prize wheel for user engagement. Built with HTML, CSS, Bootstrap, JavaScript, and jQuery.
 
-Accessibility: A responsive design ensures a seamless user experience across devices.
-
-Engagement: Features like the interactive photo gallery and video section captivate visitors.
-
-Creativity: Combines beautiful visuals and a clean layout for an enjoyable browsing experience.
-
-Community: Provides a platform for travelers to connect, share, and inspire others.
+## The Values:
+- **Inspiration**: Encourages people to explore the world by sharing unique travel stories and experiences.
+- **Accessibility**: A responsive design ensures a seamless user experience across all devices.
+- **Engagement**: Features like the prize wheel, gallery, videos, and Google Maps enhance interaction.
+- **Creativity**: Combines stunning visuals, animations, and layout for a pleasant browsing experience.
+- **Community**: Offers a platform for travelers to connect, inspire, and share moments.
 
 ## Features
-Responsive Design: Ensures seamless experience across devices.
+- **Responsive Design**: Optimized for desktops, tablets, and smartphones.
+- **Navigation Bar**: Clean and collapsible navigation, works seamlessly across screen sizes.
+- **Embedded Video Section**: Showcases immersive travel content via YouTube.
+- **Interactive Photo Gallery**: Hover effects and scroll buttons for easy navigation.
+- **Spinning Prize Wheel**: Gives users a chance to win discounts, vouchers, or free travel packages.
+- **Google Maps Integration**: Displays location-based travel destinations.
+- **Smooth Hover Effects**: For buttons, icons, and images using CSS transitions.
+- **Contact Page**: Includes prize wheel and an embedded map for location info.
 
-Navigation Bar: Fully functional with support for smaller screens.
+## External Resources
+This project took design photos and  inspiration and reference content from:
+- [TripAdvisor UK]
+- Google images.
+- Wikipedia (each city descriptions)
 
-Embedded Video Section: Share immersive travel content.
+## Screenshots
 
-Interactive Photo Gallery: Features navigation buttons and hover effects.
+### Homepage  
+![Homepage Screenshot](img/Screenshot homepage.png)
 
-Modern Aesthetics: Clean layout with rounded corners and subtle shadows.
-Prize :Spine wheel for users to get a change for discount or voucher or free travels packages 
+### Blog Page  
+![Blog Page Screenshot](img/Screenshot blog.png)
 
-# Screenshots
+### Contact Page with Prize Feature  
+![Contact Page Screenshot](img/Screenshot contact page.png)
 
-Here are some screenshots of the Travel Vlogs project:
+## Testing:
+### W3C:
+![test Screenshot](img/Screenshot w3c testing css.png)
 
-### Homepage
-![Homepage Screenshot](img/Screenshothomepagem02.png)
+### Jslint:
+![test Screenshot](img/Jslint javascript test.jpg)
 
-### Blog Page
-![Blog Page Screenshot](img/Screenshot-blogpagem02.png)
+### Lighthouse :
+![test Screenshot](img/lighthouse testing.png)
 
-### Contact Page with Prize Feature
-![Contact Page Screenshot](img/Screenshotcontactpagewithprize.png)
+### Jest :
+![test Screenshot](img/passing-jest-tests.jpg)
 
-
-
-
+### Manual testing:
+![test Screenshot](img/Screenshot manual testing(1).jpg)
 
 ## Technologies Used
-HTML5
-
-CSS3
-
-Bootstrap 5
-
-jQuery 3.7.1
-Javascript 
-Jest testing
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- JavaScript (ES6)  
+- jQuery 3.7.1  
+- Google Maps JavaScript API  
+- Jest (for testing)
 
 ## Installation
+
 Clone the repository:
 
-bash
+```bash
 git clone https://github.com/your-username/travel-blog.git
-Open index.html in your browser to view the site.
+
 
 ## Wireframe Structure
 ![Homepage Screenshot](img/wireframe.png)
