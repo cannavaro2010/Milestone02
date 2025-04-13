@@ -2,6 +2,10 @@
 
 # Travel Blog - Explore the World 🌍
 
+## 🔗 Live Project
+You can explore the full Travel Blog project here:  
+👉 [Live Demo](https://cannavaro2010.github.io/Milestone02/index.html)
+
 ## Description
 A responsive and interactive travel blog showcasing travel experiences through captivating visuals, immersive stories, and interactive features. This site includes an embedded video section, interactive photo gallery, Google Maps integration, and a spinning prize wheel for user engagement. Built with HTML, CSS, Bootstrap, JavaScript, and jQuery.
 
@@ -11,6 +15,8 @@ A responsive and interactive travel blog showcasing travel experiences through c
 - **Engagement**: Features like the prize wheel, gallery, videos, and Google Maps enhance interaction.
 - **Creativity**: Combines stunning visuals, animations, and layout for a pleasant browsing experience.
 - **Community**: Offers a platform for travelers to connect, inspire, and share moments.
+
+ 
 
 ## Features
 - **Responsive Design**: Optimized for desktops, tablets, and smartphones.
