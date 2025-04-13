@@ -61,7 +61,7 @@ header h1 {
 }
 
 #spin-wheel {
-    margin-top: 10px;
+    margin-top: 50px;
     width: 200px;
     height: 200px;
     background: conic-gradient(rgb(88, 164, 226), rgb(54, 69, 82), blue, rgb(110, 122, 146), rgb(1, 12, 41), rgb(42, 29, 223));
@@ -79,6 +79,7 @@ header h1 {
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 #prize-display {
