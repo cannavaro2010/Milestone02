@@ -55,6 +55,10 @@ This project took design photos and  inspiration and reference content from:
 ### Manual testing:
 ![test Screenshot](img/Screenshotmanualtesting(1).jpg)
 
+## Wireframe Structure
+
+![Homepage Screenshot](img/wireframe.png)
+
 ## Technologies Used
 - HTML5  
 - CSS3  
@@ -72,9 +76,7 @@ Clone the repository:
 git clone https://github.com/your-username/travel-blog.git
 
 
-## Wireframe Structure
 
-![Homepage Screenshot](img/wireframe.png)
 
 ## Usage
 Navigate: Explore the blog using the responsive navigation bar.
