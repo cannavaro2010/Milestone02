@@ -176,17 +176,17 @@ header h1{
     transition: background-color 0.3s ease-in-out;
 }
 .btn {
-    background-color: #378cc5ce;
+    background-color:#0f659e ;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-}.
+}
 
  .btn:hover {
-    background-color: #0f659e !important;
+    background-color:  #378cc5ce!important;
 }
 /* Form Styling */
 .contact-h1 {
