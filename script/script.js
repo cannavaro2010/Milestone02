@@ -1,17 +1,23 @@
 $(document).ready(function () {
     // Smooth scrolling for navbar links
     $(".nav-link").on("click", function (event) {
-        if (this.hash !== "") {
+        var self = this;
+        if (self.hash !== "") {
             event.preventDefault();
-            const hash = this.hash;
-            $("html, body").animate({ scrollTop: $(hash).offset().top }, 800, "swing");
+            var hash = self.hash;
+            // Animate scroll to the target section
+            $("html, body").animate(
+                { scrollTop: $(hash).offset().top },
+                800,
+                "swing"
+            );
         }
     });
 
-    // Fade-in effect for all images
+    // Fade-in effect for all images on page load
     $("img").css("opacity", 0).fadeTo(2000, 1);
 
-    // Gallery Image Hover Effect
+    // Gallery Image Hover Effect: scale up image on hover
     $(".gallery-item img").hover(
         function () {
             $(this).css({
@@ -24,99 +30,142 @@ $(document).ready(function () {
         }
     );
 
-    // Gallery Slider functionality
-    let currentIndex = 0;
-    const images = $(".gallery-item img");
-    const totalImages = images.length;
+    // --- Contact Page Gallery: Show one image at a time, slow skip, auto-slide ---
+    if ($('.gallery-slider').length) {
+        let $gallery = $('.gallery');
+        let $items = $gallery.find('.gallery-item');
+        let currentIndex = 0;
+        let total = $items.length;
 
-    function updateGallery(index) {
-        images.hide().eq(index).fadeIn(300); // Hide all images and only show the current image
+        function showSlide(index) {
+            $items.hide().eq(index).fadeIn(600);
+        }
+        showSlide(currentIndex);
+
+        $('.carousel-control-next').click(function () {
+            $items.eq(currentIndex).fadeOut(600, function () {
+                currentIndex = (currentIndex + 1) % total;
+                showSlide(currentIndex);
+            });
+        });
+
+        $('.carousel-control-prev').click(function () {
+            $items.eq(currentIndex).fadeOut(600, function () {
+                currentIndex = (currentIndex - 1 + total) % total;
+                showSlide(currentIndex);
+            });
+        });
+
+        // Auto-slide every 5 seconds
+        let autoSlide = setInterval(function () {
+            $('.carousel-control-next').click();
+        }, 5000);
+
+        // Pause auto-slide on hover
+        $('.gallery-slider').hover(
+            function () { clearInterval(autoSlide); },
+            function () {
+                autoSlide = setInterval(function () {
+                    $('.carousel-control-next').click();
+                }, 5000);
+            }
+        );
     }
 
-    function handleGalleryNavigation(direction) {
-        currentIndex = (currentIndex + direction + totalImages) % totalImages;
-        updateGallery(currentIndex);
-    }
+    // Prize section (Spin Wheel) logic
+    var prizes = [
+        "A Free Trip!",
+        "10% Discount",
+        "Free Ebook",
+        "Mystery Gift",
+        "Gift Card",
+        "Free Subscription"
+    ];
+    var spinning = false;
 
-    // Show the first image initially
-    updateGallery(currentIndex);
+    // Handle spin button click
+    $("#spin-wheel-btn").click(function () {
+        if (spinning) {
+            return; // Prevent multiple spins at once
+        }
 
-    // Next and previous button functionality
-    $(".carousel-control-next").click(function () {
-        handleGalleryNavigation(1); // Navigate forward
+        var userName = prompt("Please enter your name to spin the wheel:");
+        if (!userName) {
+            alert("You must enter your name to play!");
+            return;
+        }
+
+        spinning = true;
+        $("#prize-display").removeClass("d-none alert-success alert-danger alert-info").addClass("alert-info").text("Spinning...");
+
+        // Calculate a random degree for the wheel to spin
+        var randomDegree = Math.floor(Math.random() * 360) + 3600; // Multiple full spins
+        var prizeIndex = Math.floor(
+            (randomDegree % 360) / (360 / prizes.length)
+        ); // Determine which prize is won
+
+        // Animate the wheel spin
+        $("#spin-wheel").css(
+            "transform",
+            "rotate(" + randomDegree + "deg)"
+        );
+
+        // Show the prize after the spin animation
+        setTimeout(function () {
+            spinning = false;
+            $("#prize-display")
+                .removeClass("alert-info")
+                .addClass("alert-success")
+                .text("Congratulations, " + userName + "! You won: " + prizes[prizeIndex]);
+        }, 4000); // Match the spin duration
     });
 
-    $(".carousel-control-prev").click(function () {
-        handleGalleryNavigation(-1); // Navigate backward
-    });
-
-    // Auto slide functionality
-    let autoSlide = setInterval(function () {
-        handleGalleryNavigation(1);
-    }, 3000); // Slide every 3 seconds
-
-    // Pause auto-sliding when hovering over the gallery
-    $(".gallery-slider").hover(
+    // Cover the Travel Blog title when hovering the first blog image
+    $('.cover-title-trigger').hover(
         function () {
-            clearInterval(autoSlide); // Pause sliding when hovering
+            $('#blog-title').addClass('covered');
         },
         function () {
-            autoSlide = setInterval(function () { // Resume auto sliding after hover
-                handleGalleryNavigation(1);
-            }, 3000);
+            $('#blog-title').removeClass('covered');
         }
     );
 
-    // Auto-scroll Gallery functionality
-    $(document).ready(function () {
-        let scrollAmount = 250;
-        function autoScrollGallery() {
-            $(".gallery").animate({ scrollLeft: "+=" + scrollAmount }, "slow", function() {
-                let firstImg = $(".gallery img:first");
-                $(".gallery").append(firstImg.clone());
-                firstImg.remove();
-                $(".gallery").scrollLeft(0);
-            });
-        }
-        setInterval(autoScrollGallery, 3000);
-
-        $(".next").click(function () {
-            $(".gallery").animate({ scrollLeft: "+=" + scrollAmount }, "slow");
-        });
-        $(".prev").click(function () {
-            $(".gallery").animate({ scrollLeft: "-=" + scrollAmount }, "slow");
-        });
-    });
-});
-/*prize section*/
-$(document).ready(function() {
-    const prizes = ["A Free Trip!", "10% Discount", "Free Ebook", "Mystery Gift", "Gift Card", "Free Subscription"];
-    let spinning = false;
-
-    $("#spin-wheel-btn").click(function() {
-        if (spinning) return; // Prevent multiple spins
-        spinning = true;
-
-        const randomDegree = Math.floor(Math.random() * 360) + 3600; // Ensure multiple full spins
-        const prizeIndex = Math.floor((randomDegree % 360) / (360 / prizes.length)); // Determine prize
-
-        $("#spin-wheel").css("transform", `rotate(${randomDegree}deg)`);
-
-        setTimeout(() => {
-            spinning = false;
-            $("#prize-display").text(`Congratulations! You won: ${prizes[prizeIndex]}`);
-        }, 4000); // Match the spin duration
+    // Contact form submit: show thank you message
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        // Remove any previous message
+        $(".contact-thankyou-msg").remove();
+        // Show thank you message below the form
+        $(this).after(
+            '<div class="alert alert-success contact-thankyou-msg mt-3 mb-0 text-center" role="alert">Thanks, we received your message. We will get back to you within 5 days.</div>'
+        );
+        // Optionally, clear the form fields
+        this.reset();
     });
 });
 
-/// Google Maps API
-
+// Google Maps API initialization for the contact page map section
 function initialize() {
-    const mapOptions = {
-      center: { lat: 51.5074, lng: -0.1278 }, // London example
-      zoom: 10
+    var mapOptions = {
+        center: { lat: 51.5034, lng: -0.1276 }, // 10 Downing St, London
+        zoom: 15
     };
+    var map = new google.maps.Map(
+        document.getElementById("map"),
+        mapOptions
+    );
+    var marker = new google.maps.Marker({
+        position: mapOptions.center,
+        map: map,
+        title: "Our Office"
+    });
+}
 
-    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  }
-  
+// Show floating prize wheel when scrolling (like shopping cart)
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > 200) {
+        $('#spin-wheel-floating').fadeIn();
+    } else {
+        $('#spin-wheel-floating').fadeOut();
+    }
+});
