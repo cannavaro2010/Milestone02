@@ -1,4 +1,10 @@
-<!-- Updated index.html -->
+<!--
+    index.html - Travel Vlogs Home Page
+    - Responsive, accessible travel blog homepage
+    - Features: Animated SVG header, featured destinations, interactive prize wheel, consistent footer
+    - Uses Bootstrap 5, Font Awesome, Google Fonts, jQuery
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,145 +12,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Travel Vlogs</title>
     
+    <!-- Bootstrap CSS for layout and components -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <!-- Font Awesome (for social media & payment icons) -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<!-- Bootstrap Icons (alternative icons) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap Icons (optional, for extra icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Google Fonts: Roboto for modern, readable text -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/stylesheet.css">
-    
-   
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
-        <div class="container-fluid ">
-          
-          <a class="navbar-brand" href="index.html">Travel Vlogs</a>
-          <a class="navbar-logo" href="index.html">
-            <img src="img/logo-tower-london-big-ben.jpg" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+    <!-- jQuery for interactivity -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body style="font-family: 'Roboto', Arial, sans-serif;">
+    <!-- Navbar: Main navigation, fixed to top -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Brand/logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo-tower-london-big-ben.jpg" alt="Travel Vlogs Logo" class="me-2" style="width:48px;height:48px;border-radius:50%;">
+                Travel Vlogs
+            </a>
+            <!-- Hamburger menu for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
-    
-    
-    
-    
+    </nav>
 
-    <!-- Main Header -->
-    <header class=" text-white text-center py-5 mt-5">
+    <!-- Main Header: Welcome message and animated SVG plane -->
+    <header class="text-white text-center py-5 mt-5">
         <h1>Welcome to My Travel Vlogs</h1>
+        <!-- Animated SVG: Plane flying along a dotted path -->
         <svg viewBox="0 0 284.5 362.5">
             <g id="svg-doc">
-            
-                  <path id="dottedpath" fill="none" stroke="#FFF" stroke-width="3" stroke-miterlimit="10" d="M209.833 195.513c-17.085-1.122-58.39-2.184-94.537 9.785-13.627 4.512-28.945 7.1-43.084
-                   3.492-60.386-15.41.68-94.015 28.278-55.553 17.84 24.868 17.506 63.215-12.228 84.158-14.99 9.958-33.146 8.858-49.114 1.945-11.19-4.846-28.903-14.976-35.59-27" 
-                   stroke-linecap="round" stroke-dasharray="1.993 6.976"></path>
-            
-                  <g id="spaceship">
-            
+                <!-- Dotted path for the plane to follow -->
+                <path id="dottedpath" fill="none" stroke="#FFF" stroke-width="3" stroke-miterlimit="10"
+                    d="M209.833 195.513c-17.085-1.122-58.39-2.184-94.537 9.785-13.627 4.512-28.945 7.1-43.084
+                    3.492-60.386-15.41.68-94.015 28.278-55.553 17.84 24.868 17.506 63.215-12.228 84.158-14.99 9.958-33.146 8.858-49.114 1.945-11.19-4.846-28.903-14.976-35.59-27"
+                    stroke-linecap="round" stroke-dasharray="1.993 6.976"></path>
+                <g id="spaceship">
                     <g id="plane">
-            
-                      <path fill="#FFF" stroke="#393027" stroke-width="2" stroke-miterlimit="10" d="M1.758 11.046l47.598 10.93L58.272 1.69z" stroke-linecap="round" stroke-linejoin="round"></path>
-            
-                      <path fill="#FFF" stroke="#393027" stroke-width="2" stroke-miterlimit="10" d="M1.38 11.086l46.005 34.307 1.97-23.418z" stroke-linecap="round" stroke-linejoin="round"></path>
-            
-                      <path fill="#FFF" stroke="#3A3128" stroke-width="2" stroke-miterlimit="10" d="M49.615 21.527l5.382 8.716-5.81-1.483z" stroke-linecap="round" stroke-linejoin="round"></path>
-            
-                      <path fill="#3A3128" d="M22.252 21.247c-.237.145-.533.198-.827.125l-1.37-.333c-.587-.15-.945-.74-.803-1.33.144-.59.736-.95 
-                        1.323-.8l1.37.333c.587.15.945.74.803 1.33z"></path>
-               <!-- Define the motion path animation -->
-                <animateMotion 
-                               xlink:href="#spaceship"
-                               dur="5s" 
-                               repeatCount="indefinite" 
-                               rotate="auto">
-                  <mpath xlink:href="#dottedpath" />
-                </animateMotion >
+                        <!-- Plane body and details -->
+                        <path fill="#FFF" stroke="#393027" stroke-width="2" stroke-miterlimit="10"
+                            d="M1.758 11.046l47.598 10.93L58.272 1.69z" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path fill="#FFF" stroke="#393027" stroke-width="2" stroke-miterlimit="10"
+                            d="M1.38 11.086l46.005 34.307 1.97-23.418z" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path fill="#FFF" stroke="#3A3128" stroke-width="2" stroke-miterlimit="10"
+                            d="M49.615 21.527l5.382 8.716-5.81-1.483z" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path fill="#3A3128"
+                            d="M22.252 21.247c-.237.145-.533.198-.827.125l-1.37-.333c-.587-.15-.945-.74-.803-1.33.144-.59.736-.95 
+                            1.323-.8l1.37.333c.587.15.945.74.803 1.33z"></path>
+                        <!-- Animate the plane along the dotted path -->
+                        <animateMotion 
+                            xlink:href="#spaceship"
+                            dur="5s" 
+                            repeatCount="indefinite" 
+                            rotate="auto">
+                            <mpath xlink:href="#dottedpath" />
+                        </animateMotion>
                     </g>
-            
-                  </g>
-            
-                </g></svg>
-
-
-
+                </g>
+            </g>
+        </svg>
     </header>
 
-    <!-- Main content area -->
+    <!-- Main content area: Featured Destinations -->
     <main class="container mt-5">
         <section>
             <h2>Featured Destinations</h2>
             <div class="row">
+                <!-- Each destination is a Bootstrap column with image and description -->
                 <div class="col-md-4 destination">
                     <img src="img/Djemaa_el_Fna.jpg" alt="Destination 1" class="img-fluid rounded shadow" loading="lazy">
-                    <p>The fragrant air of Morocco seems spiked with local spices. Cradled by the dunes of the Sahara, the Kingdom has been inhabited for hundreds of thousands of years. And from the bustling Medina of Marrakech to the mosaic of leather tanning vessels in Fes... <a href="https://www.tripadvisor.co.uk/Attraction_Products-g293734-a_contentId.126478849135+14328120221-Marrakech_Marrakech_Safi.html"target="_blank" class="read-more">Read more...</a></p>
+                    <p>
+                        The fragrant air of Morocco seems spiked with local spices. Cradled by the dunes of the Sahara, the Kingdom has been inhabited for hundreds of thousands of years. And from the bustling Medina of Marrakech to the mosaic of leather tanning vessels in Fes...
+                        <a href="https://www.tripadvisor.co.uk/Attraction_Products-g293734-a_contentId.126478849135+14328120221-Marrakech_Marrakech_Safi.html" target="_blank" class="read-more">Read more...</a>
+                    </p>
                 </div>
                 <div class="col-md-4 destination">
                     <img src="img/krakow-square.jpg" alt="Destination 2" class="img-fluid rounded shadow" loading="lazy">
-                    <p>With its historic streets, delicious food, and buzzy nightlife, Krakow might well be one of Europe’s best hidden gems. For a refresher course on medieval history, explore the charming UNESCO-listed Old Town, which has the largest medieval market square in <a href="https://www.tripadvisor.co.uk/Tourism-g274772-Krakow_Lesser_Poland_Province_Southern_Poland-Vacations.html"target="_blank" class="read-more">Read more...</a></p>
+                    <p>
+                        With its historic streets, delicious food, and buzzy nightlife, Krakow might well be one of Europe’s best hidden gems. For a refresher course on medieval history, explore the charming UNESCO-listed Old Town, which has the largest medieval market square in
+                        <a href="https://www.tripadvisor.co.uk/Tourism-g274772-Krakow_Lesser_Poland_Province_Southern_Poland-Vacations.html" target="_blank" class="read-more">Read more...</a>
+                    </p>
                 </div>
                 <div class="col-md-4 destination">
                     <img src="img/marrakech.png" alt="Destination 3" class="img-fluid rounded shadow" loading="lazy">
-                    <p>Vibrant and bustling, Marrakech has an energy all its own (there's a reason it's one of Morocco's most well-visited cities). To get right to the heart of things, wind your way through its busy Medina—the walled, historic neighbourhood that serves as the city's <a href="https://www.tripadvisor.co.uk/Tourism-g293734-Marrakech_Marrakech_Safi-Vacations.html"target="_blank" class="read-more">Read more...</a></p>
+                    <p>
+                        Vibrant and bustling, Marrakech has an energy all its own (there's a reason it's one of Morocco's most well-visited cities). To get right to the heart of things, wind your way through its busy Medina—the walled, historic neighbourhood that serves as the city's
+                        <a href="https://www.tripadvisor.co.uk/Tourism-g293734-Marrakech_Marrakech_Safi-Vacations.html" target="_blank" class="read-more">Read more...</a>
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 destination">
-                    <img src="img/paris.jpg" alt="Destination 1" class="img-fluid rounded shadow" loading="lazy">
-                    <p>Paris lives up to its hype: A city with unbelievable food and culture, plus stunning views everywhere you turn. With 18 arrondissements, it’s a lot to see in one trip, but each neighbourhood has a personality all its own. You can’t miss the iconic 7th, where art and. <a href="https://www.tripadvisor.co.uk/Tourism-g187147-Paris_Ile_de_France-Vacations.html"target="_blank" class="read-more">Read more...</a></p>
+                    <img src="img/paris.jpg" alt="Destination 4" class="img-fluid rounded shadow" loading="lazy">
+                    <p></p>
+                        Paris lives up to its hype: A city with unbelievable food and culture, plus stunning views everywhere you turn. With 18 arrondissements, it’s a lot to see in one trip, but each neighbourhood has a personality all its own. You can’t miss the iconic 7th, where art and.
+                        <a href="https://www.tripadvisor.co.uk/Tourism-g187147-Paris_Ile_de_France-Vacations.html" target="_blank" class="read-more">Read more...</a>
+                    </p>
                 </div>
                 <div class="col-md-4 destination">
-                    <img src="img/rome02.jpg" alt="Destination 2" class="img-fluid rounded shadow" loading="lazy">
-                    <p>It’s easy to see why Rome’s one of the most-visited places on the planet: There’s history everywhere (the Pantheon, the Colosseum, the list goes on), sculptural masterpieces in almost every piazza, and—of course—ridiculously good food... <a href="https://www.tripadvisor.co.uk/Tourism-g187791-Rome_Lazio-Vacations.html" target="_blank" class="read-more">Read more...</a></p>
+                    <img src="img/rome02.jpg" alt="Destination 5" class="img-fluid rounded shadow" loading="lazy">
+                    <p>
+                        It’s easy to see why Rome’s one of the most-visited places on the planet: There’s history everywhere (the Pantheon, the Colosseum, the list goes on), sculptural masterpieces in almost every piazza, and—of course—ridiculously good food...
+                        <a href="https://www.tripadvisor.co.uk/Tourism-g187791-Rome_Lazio-Vacations.html" target="_blank" class="read-more">Read more...</a>
+                    </p>
                 </div>
                 <div class="col-md-4 destination">
-                    <img src="img//Old Town Gdansk Poland.jpg" alt="Destination 3" class="img-fluid rounded shadow" loading="lazy">
-                    <p>One of Poland’s most beautiful cities, Gdansk, on the Baltic Sea, has played major roles in history, especially in the 20th-century. It was the 1939 flash point of World War II.. <a href="https://www.tripadvisor.co.uk/Tourism-g274725-Gdansk_Pomerania_Province_Northern_Poland-Vacations.html" target="_blank" class="read-more">Read more...</a></p>
+                    <img src="img/Old Town Gdansk Poland.jpg" alt="Destination 6" class="img-fluid rounded shadow" loading="lazy">
+                    <p></p>
+                        One of Poland’s most beautiful cities, Gdansk, on the Baltic Sea, has played major roles in history, especially in the 20th-century. It was the 1939 flash point of World War II..
+                        <a href="https://www.tripadvisor.co.uk/Tourism-g274725-Gdansk_Pomerania_Province_Northern_Poland-Vacations.html" target="_blank" class="read-more">Read more...</a>
+                    </p>
                 </div>
             </div>
         </section>
+
+        <!-- Prize Wheel Section: Interactive feature for user engagement -->
+        <section class="my-5 text-center">
+            <h2>Spin the Prize Wheel!</h2>
+            <p>Enter your name and try your luck!</p>
+            <!-- Spin button triggers the prize wheel logic in script.js -->
+            <button id="spin-wheel-btn" class="btn btn-success btn-lg mb-3">
+                <i class="fa-solid fa-rotate"></i> Spin
+            </button>
+            <!-- The spinning wheel graphic and prize display -->
+            <div id="spin-wheel" class="mx-auto my-3" style="width:200px;height:200px;">
+                <span class="fs-1 text-success"><i class="fa-solid fa-gift"></i></span>
+            </div>
+            <div id="prize-display" class="alert alert-info d-none"></div>
+        </section>
     </main>
 
-    <!-- Footer -->
-<footer class="bg-secondary text-white text-center py-3 mt-5">
-    <div class="container">
-        <!-- Social Media Icons -->
-        <div class="mb-3">
-            <a href="https://facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="https://twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="https://instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://youtube.com" target="_blank" class="text-white mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+    <!-- Footer: Social media and payment icons, copyright -->
+    <footer class="bg-secondary text-white text-center py-3 mt-5">
+        <div class="container">
+            <!-- Social Media Icons -->
+            <div class="mb-3">
+                <a href="https://facebook.com" target="_blank" class="text-white mx-2" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://instagram.com" target="_blank" class="text-white mx-2" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://youtube.com" target="_blank" class="text-white mx-2" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <!-- Payment Icons -->
+            <div class="mb-3">
+                <i class="fab fa-cc-mastercard fa-2x mx-2" aria-label="Mastercard"></i>
+                <i class="fab fa-cc-paypal fa-2x mx-2" aria-label="PayPal"></i>
+            </div>
+            <p>&copy; 2025 Travel Vlogs</p>
         </div>
+    </footer>
 
-        <!-- Payment Icons -->
-        <div class="mb-3">
-            <i class="fab fa-cc-mastercard fa-2x mx-2"></i>
-            <i class="fab fa-cc-paypal fa-2x mx-2"></i>
-        </div>
-
-        <p>&copy; 2025 Travel Vlogs</p>
-    </div>
-</footer>
-
-
+    <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for interactivity (gallery, prize wheel, etc.) -->
     <script src="script/script.js"></script>
 </body>
 </html>
