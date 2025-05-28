@@ -71,11 +71,11 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 ### Automated Testing
 
-- **W3C Validator:** All HTML and CSS validated, no major errors. (see `img/Screenshotw3ctestingcss.png`) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
+- **W3C Validator:** All HTML and CSS validated, no major errors. ![w3ce Screenshot](img/Screenshotw3ctestingcss.png) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
 - 
-- **JSLint:** JavaScript passes linter with no major issues. (see `img/Jslintjavascripttest.jpg`) (see `img/jslint-test-pagebottom.png`).
+- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/Jslintjavascripttest.jpg)  ![Jstest Screenshot](img/jslint-test-pagebottom.png)
 - 
-- **Lighthouse:** Accessibility, performance, and best practices tested (see `img/lighthouse-indexpage.png`) (see `img/lighthouse-contact.png`) (see `img/lighthouse-blog.png`).
+- **Lighthouse:** Accessibility, performance, and best practices tested ![Homepage Screenshot](img/lighthouse-indexpage.png) ![contactpage Screenshot](img/lighthouse-contact.png) ![blogpage Screenshot](img/lighthouse-blog.png).
 - **Jest:**  
 
 Unit tests were written using **Jest** to ensure the reliability of key interactive features and JavaScript functions.  
@@ -97,7 +97,7 @@ The following areas were covered:
   Tests validate that the prize wheel selects a valid prize, prevents multiple spins at once, and handles spin logic correctly.
 
 All tests passed, confirming that the main interactive features work as intended and edge cases are handled.  
-Test files and results can be found in the `/script/functions.test.js` file.. (see `img/passing-jest-tests.jpg`).
+Test files and results can be found in the `/script/functions.test.js` file.. ![jest test Screenshot](img/passing-jest-tests.jpg).
 
 ### Manual Testing
 
