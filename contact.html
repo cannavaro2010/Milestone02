@@ -4,95 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Travel Vlogs</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/stylesheet.css">
-
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- =================== Navbar =================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Travel Vlogs</a>
-            <a class="navbar-logo" href="index.html">
-                <img src="img/logo-tower-london-big-ben.jpg" alt="logo">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo-tower-london-big-ben.jpg" alt="Travel Vlogs Logo" class="me-2" style="width:48px;height:48px;border-radius:50%;">
+                Travel Vlogs
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main header -->
-    <header class="contact-h1 text-white text-center">
-        <div class="row align-items-center">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <h1>Contact Us</h1>
-                <p>We'd love to hear from you! Get in touch with us below.</p>
-            </div>
-            <div class="col-4">
-                <div id="spin-wheel-container">
-                    <button id="spin-wheel-btn">Spin the Wheel</button>
-                    <div id="spin-wheel">
-                        <p id="prize-display">Your prize will appear here!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- =================== Main Header =================== -->
+    <header class="bg-primary text-white text-center py-5 mt-5 rounded-bottom">
+        <h1 class="display-5 fw-bold">Contact Us</h1>
+        <p class="lead">We'd love to hear from you! Get in touch with us below.</p>
     </header>
 
-    <!-- Main content -->
-    <main class="container mt-5">
-        <section>
-            <h2>Get in Touch</h2>
-            <form action="submit_contact.php" method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name :</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email Address :</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message :</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message </button>
-            </form>
-        </section>
+    <!-- =================== Main Content =================== -->
+    <main class="container my-5">
+        <!-- ===== First Row: Contact Form | Gallery Slider ===== -->
+        <div class="row g-5 mb-4">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <section>
+                    <h2 class="mb-4">Send a Message</h2>
+                    <form class="bg-white p-4 rounded shadow-sm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </form>
+                </section>
+            </div>
+            <!-- Gallery Slider -->
+            <div class="col-lg-6">
+                <section>
+                    <h2 class="mb-3 text-center">Our Memories</h2>
+                    <div class="gallery-slider position-relative w-100 mb-4">
+                        <!-- Prev Button -->
+                        <button class="carousel-control-prev btn btn-dark position-absolute top-50 start-0 translate-middle-y" style="z-index:2;">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <!-- Gallery Images (one visible at a time) -->
+                        <div class="gallery w-100" style="height: 340px;">
+                            <div class="gallery-item">
+                                <img src="img/Djemaa_el_Fna.jpg" alt="Djemaa el Fna">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/krakow.jpg" alt="Krakow city">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/Gdansk02.jpg" alt="Gdansk city">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/paris02.jpg" alt="Paris">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="img/tokyo.jpg" alt="Tokyo">
+                            </div>
+                        </div>
+                        <!-- Next Button -->
+                        <button class="carousel-control-next btn btn-dark position-absolute top-50 end-0 translate-middle-y" style="z-index:2;">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-        <!-- Responsive Google Maps Api -->
-        <div id="map"></div>
+        <!-- ===== Second Row: Map | Video ===== -->
+        <div class="row g-5">
+            <!-- Map Section -->
+            <div class="col-lg-6">
+                <section>
+                    <h3 class="mb-2 text-center">Find Us</h3>
+                    <div class="d-flex flex-column align-items-center">
+                        <div id="map" style="width:100%;max-width:480px;height:270px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);"></div>
+                        <p class="text-center mt-2 mb-0 w-100">
+                            <strong>Our Address:</strong> 10 Downing St, London SW1A 2AA, UK
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <!-- Video Section -->
+            <div class="col-lg-6">
+                <section class="text-center">
+                    <h2 class="mb-3">Watch Our Travel Highlights</h2>
+                    <video controls width="100%" style="max-width:480px; height:270px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                        <source src="video/videoplayback-ad.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+            </div>
+        </div>
 
-      
-      
-
+        <!-- ===== Floating Prize Wheel (shows on scroll, desktop only) ===== -->
+        <div id="spin-wheel-floating" class="d-none d-lg-flex">
+            <section>
+                <!-- Prize icon always visible, spin button appears on hover -->
+                <div id="spin-wheel">
+                    <span class="fs-1 text-success">
+                        <i class="fa-solid fa-gift"></i>
+                    </span>
+                </div>
+                <button id="spin-wheel-btn" class="btn btn-success btn-lg mb-0">
+                    <i class="fa-solid fa-rotate"></i> Spin
+                </button>
+            </section>
+        </div>
     </main>
 
-    <!-- Footer -->
+    <!-- =================== Footer =================== -->
     <footer class="bg-secondary text-white text-center py-3 mt-5">
         <div class="container">
             <div class="mb-3">
-                 <!-- Social Media Icons -->
-            <div class="mb-3">
+                <!-- Social Media Icons -->
                 <a href="https://facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="https://twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="https://instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://youtube.com" target="_blank" class="text-white mx-2"><i class="fab fa-youtube fa-2x"></i></a>
             </div>
-    
             <!-- Payment Icons -->
             <div class="mb-3">
                 <i class="fab fa-cc-mastercard fa-2x mx-2"></i>
@@ -102,15 +160,11 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- =================== Scripts =================== -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
-    
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP2ZJuDqELejLA6aOuVNg9Hkz5nyAVcZo&callback=initialize"
-    defer
-  ></script>
-  
+    <!-- Google Maps API with your key -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initialize"></script>
 </body>
 </html>
