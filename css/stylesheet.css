@@ -7,32 +7,26 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 /* Navigation Bar */
 .navbar {
     background: linear-gradient(90deg, #1a237e 0%, #00e676 100%);
     box-shadow: 0 6px 24px rgba(0,0,0,0.18);
     min-height: 80px;
-    border-bottom: 4px solid #ffd600;
-}
-
+    border-bottom: 4px solid #ffd600;}
 .navbar-nav li {
     padding: 0 10px;
     font-size: large;
 }
-
 .navbar-nav li a:hover {
     color: rgb(139, 243, 70);
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
     font-weight: 500;
 }
-
 nav .nav-link:focus {
     text-decoration: none !important;
     background-color: rgba(136, 136, 136, 0.815) !important;
 }
-
 /* Navbar logo */
 .navbar-logo img {
     width: 100px;
@@ -40,11 +34,9 @@ nav .nav-link:focus {
     border-radius: 50%;
     margin-right: 10px;
 }
-
 .navbar-brand {
     padding-left: 30px;
 }
-
 /* Header */
 header {
     background: linear-gradient(90deg, #0d6efd 60%, #198754 100%);
@@ -52,11 +44,9 @@ header {
     border-radius: 0 0 1.5rem 1.5rem;
     margin-bottom: 2rem;
 }
-
 header h1 {
     margin-top: 40px;
 }
-
 /* Prize section */
 #spin-wheel-container {
     position: fixed;
@@ -65,7 +55,6 @@ header h1 {
     z-index: 1000;
     text-align: center;
 }
-
 #spin-wheel {
     margin-top: 50px;
     width: 200px;
@@ -86,7 +75,6 @@ header h1 {
     justify-content: center;
     font-size: 2.5rem;
 }
-
 #spin-wheel-btn {
     padding: 10px 20px;
     background-color: #074772ce;
@@ -95,7 +83,6 @@ header h1 {
     cursor: pointer;
     margin-top: 20px;
 }
-
 #prize-display {
     position: absolute;
     width: 200px;
@@ -108,13 +95,11 @@ header h1 {
     margin-top: 1rem;
     transition: background 0.3s;
 }
-
 /* Video Styling */
 .ratio-16x9 iframe {
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .maps {
     width: 100%;
     height: 400px;
@@ -122,7 +107,6 @@ header h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
-
 /* Gallery */
 .gallery {
     display: flex;
@@ -131,7 +115,6 @@ header h1 {
     position: relative;
     white-space: nowrap;
 }
-
 .gallery img {
     width: 250px;
     height: 200px;
@@ -139,7 +122,6 @@ header h1 {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
 .gallery img:hover {
     transform: scale(1.05);
     color: #f8d210;
@@ -154,7 +136,6 @@ header h1 {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
 .destination:hover {
     background-color: #f5f7fa; /* subtle highlight if you want */
     border: none;
@@ -190,7 +171,6 @@ header h1 {
     overflow: hidden;
     max-width: 100%;
 }
-
 .gallery-btn {
     position: absolute;
     top: 50%;
@@ -202,7 +182,6 @@ header h1 {
     cursor: pointer;
     z-index: 10;
 }
-
 .nav-link {
     background-color: rgba(0, 0, 0, 0.125);
     color: white;
@@ -210,7 +189,6 @@ header h1 {
     cursor: pointer;
     text-align: right;
 }
-
 .prev {
     left: 10px;
 }
@@ -218,7 +196,6 @@ header h1 {
 .next {
     right: 10px;
 }
-
 /* Buttons */
 .btn {
     background-color: #378cc5ce;
@@ -229,7 +206,6 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
-
 .btn-success, .btn-primary {
     border-radius: 2rem;
     font-weight: 600;
@@ -240,13 +216,11 @@ header h1 {
 .btn:hover {
     background-color: #0f659e !important;
 }
-
 /* Form Styling */
 .contact-h1 {
     text-align: center;
     margin-top: 120px;
 }
-
 /* Footer */
 footer {
     background: #212529;
@@ -270,21 +244,17 @@ footer a:hover {
 footer i {
     color: rgb(184, 214, 51);
 }
-
 /* SVG Animation */
 html {
     background-color: #28505d00;
 }
-
 svg {
     width: 800px;
     height: 200px;
 }
-
 #spaceship {
     transform: translateY(11px) rotate(180deg);
 }
-
 /* Google Maps */
 #map {
     height: 400px;
@@ -293,7 +263,6 @@ svg {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 /* Responsive tweaks */
 @media (max-width: 767px) {
     header {
@@ -304,7 +273,6 @@ svg {
         font-size: 1.1rem;
     }
 }
-
 /* Navbar Improvements */
 .navbar {
     background: linear-gradient(90deg, #1a237e 0%, #00e676 100%);
@@ -348,7 +316,6 @@ svg {
     transform: translateY(-2px) scale(1.08);
     text-shadow: none;
 }
-
 /* --- Universal Image/Card Hover Effect --- */
 img,
 .card,
@@ -359,7 +326,6 @@ img,
     transition: transform 0.3s cubic-bezier(.17,.67,.83,.67), box-shadow 0.3s;
     cursor: pointer;
 }
-
 img:hover,
 .card:hover,
 .card-img-top:hover,
@@ -371,14 +337,12 @@ img:hover,
     z-index: 2;
     border: 2px solid #ffd600;
 }
-
 /* --- Optional: Add hover to section blocks for index page --- */
 section:hover {
     box-shadow: 0 8px 32px rgba(33,150,243,0.10);
     transform: scale(1.01);
     transition: box-shadow 0.3s, transform 0.3s;
 }
-
 /* Ensure .destination contains its content and prevents overflow */
 .destination {
     position: relative;
@@ -390,7 +354,6 @@ section:hover {
     margin: 10px 0px;
     padding-bottom: 16px; /* Add space below image for text */
 }
-
 /* Only the image scales on hover, not the text */
 .destination img {
     width: 100%;           /* Responsive width */
@@ -403,13 +366,11 @@ section:hover {
     display: block;
     margin-bottom: 12px;   /* Space between image and text */
 }
-
 .destination img:hover {
     transform: scale(1.08);
     box-shadow: 0 8px 24px rgba(33,150,243,0.18);
     z-index: 2;
 }
-
 .gallery-item { display: none; }
 .gallery-item img {
     display: block;
@@ -419,7 +380,6 @@ section:hover {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
-
 /* Cover the Travel Blog title when hovering the first blog image */
 .card:first-of-type a:hover img {
     position: relative;
@@ -429,14 +389,12 @@ section:hover {
 .card:first-of-type a:hover {
     /* No effect on title, so we use JS for the title */
 }
-
 /* Overlay effect for the title */
 #blog-title.covered {
     color: transparent !important;
     text-shadow: none !important;
     transition: color 0.3s;
 }
-
 /* Make gallery-slider fill the column */
 .gallery-slider {
     width: 100%;
@@ -446,7 +404,6 @@ section:hover {
     flex-direction: column;
     justify-content: center;
 }
-
 /* Make gallery fill the slider and match form height */
 .gallery {
     width: 100%;
@@ -459,7 +416,6 @@ section:hover {
     display: block;
     position: relative;
 }
-
 /* Make gallery items/images fill the width and match form height */
 .gallery-item img {
     width: 100%;
@@ -470,7 +426,6 @@ section:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     display: block;
 }
-
 /* Fresh gallery grid style */
 .gallery-grid {
     width: 100%;
@@ -485,7 +440,6 @@ section:hover {
     justify-content: center;
     gap: 16px;
 }
-
 .gallery-thumb {
     overflow: hidden;
     border-radius: 10px;
@@ -497,19 +451,16 @@ section:hover {
     justify-content: center;
     background: #f8f9fa;
 }
-
 .gallery-thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
 }
-
 .gallery-thumb:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 24px rgba(33,150,243,0.18);
 }
-
 /* Responsive: 2 columns on desktop, 1 on mobile */
 @media (max-width: 767px) {
     .gallery-grid .col-6 {
@@ -520,7 +471,6 @@ section:hover {
         height: 200px;
     }
 }
-
 .col-lg-6 > section {
     background: #fff;
     border-radius: 12px;
@@ -528,13 +478,11 @@ section:hover {
     padding: 24px 18px;
     margin-bottom: 0;
 }
-
 @media (max-width: 991px) {
     .col-lg-6 > section {
         margin-bottom: 24px;
     }
 }
-
 /* Floating Prize Wheel (medium, interactive, improved) */
 #spin-wheel-floating {
     position: fixed;
@@ -554,7 +502,6 @@ section:hover {
     animation: floatY 2.5s infinite alternate;
     overflow: visible;
 }
-
 #spin-wheel-floating section {
     padding: 0;
     width: 100%;
@@ -565,13 +512,11 @@ section:hover {
     flex-direction: column;
     position: relative;
 }
-
 #spin-wheel-floating h2,
 #spin-wheel-floating p,
 #spin-wheel-floating #prize-display {
     display: none !important;
 }
-
 /* Show the prize icon by default */
 #spin-wheel-floating #spin-wheel {
     display: flex;
@@ -584,14 +529,12 @@ section:hover {
     transition: opacity 0.2s;
     z-index: 1;
 }
-
 #spin-wheel-floating .fa-gift {
     font-size: 3rem;
     color: #198754;
     transition: transform 0.3s, opacity 0.2s;
     pointer-events: none;
 }
-
 /* Hide the spin button by default */
 #spin-wheel-floating #spin-wheel-btn {
     display: flex;
@@ -619,33 +562,27 @@ section:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 #spin-wheel-floating #spin-wheel-btn .fa-rotate {
     font-size: 1.5rem;
     margin-right: 0.5em;
 }
-
 /* On hover: grow, show spin button, hide icon */
 #spin-wheel-floating:hover {
     transform: scale(1.13);
     box-shadow: 0 12px 36px rgba(33,150,243,0.22);
 }
-
 #spin-wheel-floating:hover #spin-wheel-btn {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     pointer-events: auto;
 }
-
 #spin-wheel-floating:hover #spin-wheel {
     opacity: 0;
     pointer-events: none;
 }
-
 #spin-wheel-floating .fa-rotate {
     font-size: 2.2rem;
 }
-
 @media (max-width: 991px) {
     #spin-wheel-floating {
         display: none !important;
