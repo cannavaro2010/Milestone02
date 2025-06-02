@@ -73,9 +73,25 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 - **W3C Validator:** All HTML and CSS validated, no major errors. ![w3ce Screenshot](img/Screenshotw3ctestingcss.png) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
 - 
-- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/Jslintjavascripttest.jpg)  ![Jstest Screenshot](img/jslint-test-pagebottom.png)
+- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/Jslintjavascripttest.jpg)  ![Jstest Screenshot](img/jslint-test01.png)
 - 
-- **Lighthouse:** Accessibility, performance, and best practices tested ![Homepage Screenshot](img/lighthouse-indexpage.png) ![contactpage Screenshot](img/lighthouse-contact.png) ![blogpage Screenshot](img/lighthouse-blog.png).
+- **Lighthouse:** Accessibility, performance, and best practices tested
+- ## Known Issues with Lighthouse Audits
+
+When running Lighthouse audits, you may encounter performance impacts due to browser extensions or stored data. Here are two common issues:
+
+### 1. Extensions Affecting Performance
+Chrome extensions can negatively impact page load performance, leading to lower Lighthouse scores. To mitigate this:
+- Run the audit in **Incognito Mode**.
+- Use a **Chrome profile without extensions**.
+
+### 2. IndexedDB Stored Data Impact
+Stored data in IndexedDB may also influence performance metrics. To prevent this:
+- Conduct the audit in an **Incognito Window** to avoid interference from previously stored resources.
+
+Following these steps can help ensure more accurate Lighthouse results.
+
+- ![Homepage Screenshot](img/lighthouse-indexpage.png) ![contactpage Screenshot](img/lighthouse-contact.png) ![blogpage Screenshot](img/Screensho-blog-page.png).
 - **Jest:**  
 
 Unit tests were written using **Jest** to ensure the reliability of key interactive features and JavaScript functions.  
