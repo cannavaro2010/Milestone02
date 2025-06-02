@@ -73,7 +73,7 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 - **W3C Validator:** All HTML and CSS validated, no major errors. ![w3ce Screenshot](img/Screenshotw3ctestingcss.png) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
 - 
-- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/Jslintjavascripttest.jpg)  ![Jstest Screenshot](img/jslint-test01.png)
+- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/jslint-test-pagebottom.png)  ![Jstest Screenshot](jslint-test01.png)
 - 
 - **Lighthouse:** Accessibility, performance, and best practices tested
 - ## Known Issues with Lighthouse Audits
