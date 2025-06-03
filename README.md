@@ -58,12 +58,12 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 ## Screenshots & Wireframes
 
-> **Note:** Screenshots and wireframes are included in the `/screenshots` folder.
+> **Note:** Screenshots and wireframes are included in the `img/screenshot-readme` folder.
 
-- **Homepage:** ![Homepage Screenshot](img/Screenshot-homepage.png)
-- **Blog Page:** ![Blog Page Screenshot](img/Screenshot-blog-page.png)
-- **Contact Page:** ![Contact Page Screenshot](img/Screenshot-contact-page.png)
-- **Wireframes:** ![Wireframe Screenshot](img/wireframe.png)
+- **Homepage:** ![Homepage Screenshot](img/screenshot-readme/screenshot-homepage.png).
+- **Blog Page:** ![Blog Page Screenshot](img/screenshot-readme/screenshot-blog-page.png)
+- **Contact Page:** ![Contact Page Screenshot](img/screenshot-readme/screenshot-contact-page.png)
+- **Wireframes:** ![Wireframe Screenshot](img/screenshot-readme/wireframe.png)
 
 ---
 
@@ -91,15 +91,25 @@ Stored data in IndexedDB may also influence performance metrics. To prevent this
 
 Following these steps can help ensure more accurate Lighthouse results.
 
-- ![Homepage Screenshot](img/tests_imgs/lighthouse-indexpage.png)
-  ## What is Lighthouse Testing?
+- 
+  ## Lighthouse Testing
 
-Lighthouse is an open-source, automated tool developed by Google to evaluate and improve website quality. It audits web pages across five key categories:
 
-- **Performance**: Analyzes load speed, responsiveness, and efficiency.
-- **Accessibility**: Checks whether the site is usable for people with disabilities.
+
+- **Performance Improvements**:
+- I removed unnecessary CSS code to streamline styles and enhance efficiency.
+- I avoided inline CSS to improve rendering and maintain a structured approach.
+- I resized images to reasonable dimensions for faster load times and better responsiveness.
+  ![Homepage Screenshot](img/tests_imgs/lighthouse-indexpage.png)
+
+- **Accessibility Enhancements**:
+- I implemented ARIA label attributes to improve navigation for screen readers.
+- I added alt descriptions for all images, ensuring better accessibility for visually impaired users.
+  ![aria label Screenshot](img/tests_imgs/lighthouse-labels.png)
+  ![alt  Screenshot](img/tests_imgs/lighthouse-css.png)
+
 - **Best Practices**: Reviews security, coding standards, and modern development techniques.
-- **SEO**: Identifies improvements to help the site rank better in search engines.
+- **SEO**: Identifies improvements to help the site rank better in search engines(google).
 - **Progressive Web App (PWA)**: Evaluates offline capabilities and fast-loading features.
 
 Lighthouse generates a detailed report with scores and actionable recommendations, helping developers optimize their websites for a better user experience. It can be run through Chrome DevTools, a command-line interface, or as a Node.js module.
@@ -148,36 +158,24 @@ Manual testing was performed on all main pages (Home, Blog, Contact) to ensure f
 
 - **Navigation:**  
   - All navbar links work and highlight the current page.
-  - Hamburger menu works on mobile.
+  - When switching to mobile mode, the navigation bar seamlessly transforms into a toggle button positioned in the top corner of the page.
     ![manual test Screenshot](img/tests_imgs/screenshot-mobile-mode.png).
 
-- **Images & Gallery:**  
+- ### Blog Page:**  
   - All images load and display correctly.
-  - Gallery slider arrows are keyboard and screen reader accessible.
+  - The gallery slider arrows are well-sized, ensuring an intuitive and user-friendly navigation experience. Their design enhances usability, making it easy for users to browse through images smoothly and efficiently
+  - ![manual test Screenshot](img/screenshot-readme/screenshot-contact-page.png).
+    
 
-- **Contrast & Accessibility:**  
-  - Text is readable against backgrounds.
-  - All buttons and links have visible or ARIA labels.
 
----
 
-### Blog Page
 
-- **Content Structure:**  
-  - Headings follow a logical order (`h1`, `h2`, `h3`).
-  - Blog cards display titles, images, and descriptions.
 
 - **Links:**  
-  - All "Holiday Packages" links open in a new tab and have descriptive text.
+  - All "Holiday Packages" links open in a new tab without any issues.
+ ![manual test Screenshot](img/tests_imgs/newtab.png)
 
-- **Accessibility:**  
-  - Social media and icon links have `aria-label`.
-  - No skipped heading levels.
 
-- **Contrast:**  
-  - Sufficient contrast for all text and buttons.
-
----
 
 ### Contact Page
 
@@ -185,7 +183,7 @@ Manual testing was performed on all main pages (Home, Blog, Contact) to ensure f
   - All fields have labels and required validation.
     ![manual test Screenshot](img/tests_imgs/contact-form.png).
     
-  - The submit button is properly labeled and accessible. Upon submission, a message appears at the bottom confirming a response within 5 days.
+  - The submit button is properly labeled and accessible, upon submission, a message appears at the bottom confirming a response within 5 days.
     
     ![manual test Screenshot](img/tests_imgs/response-message-conact-form.png).
 
