@@ -83,13 +83,14 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 
   
-- **JSLint:** JavaScript passes linter with no major issues.
-- **Syntax Errors:** Detects if there is a missing brackets, or incorrect variable declarations, and other syntax-related mistakes.
-- **Unused Variables:** checking for flags variables that are declared but never used in the code.
-- **Global Variables:** spot any identifies unintended global variables that may lead to conflicts.
-- **Coding Style:** Ensures consistent indentation, spacing, and formatting based on best practices.
-- **Potential Bugs:** Warns about issues like missing semicolons, accidental assignments in conditional statements, and unreachable code.
-- **ECMAScript Compatibility:** find out about any highlights deprecated features or syntax that might not work across all JavaScript versions.
+- **JSLint:**
+- JavaScript passes linter with no major issues.
+- Syntax Errors: Detects if there is a missing brackets, or incorrect variable declarations, and other syntax-related mistakes.
+- Unused Variables: checking for flags variables that are declared but never used in the code.
+- Global Variables: spot any identifies unintended global variables that may lead to conflicts.
+- Coding Style: Ensures consistent indentation, spacing, and formatting based on best practices.
+- Potential Bugs: Warns about issues like missing semicolons, accidental assignments in conditional statements, and unreachable code.
+- ECMAScript Compatibility: find out about any highlights deprecated features or syntax that might not work across all JavaScript versions.
 
    ![Jstest Screenshot](img/tests_imgs/jslint-test01.png)  ![Jstest Screenshot](img/tests_imgs/jslint-test-pagebottom.png)
   
