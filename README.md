@@ -71,7 +71,8 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 ### Automated Testing
 
-- **W3C Validator:**
+- **Test conducted on [03/06/2025]:
+W3C Validator:**
   
 - > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
   ![w3ce Screenshot](img/tests_imgs/screenshotw3ctestingcss.png)
@@ -83,7 +84,7 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 
   
-- **JSLint:**
+- **Test conducted on [03/06/2025] JSLint:**
 - JavaScript passes linter with no major issues.
 - Syntax Errors: Detects if there is a missing brackets, or incorrect variable declarations, and other syntax-related mistakes.
 - Unused Variables: checking for flags variables that are declared but never used in the code.
@@ -111,7 +112,7 @@ Stored data in IndexedDB may also influence performance metrics. To prevent this
 Following these steps can help ensure more accurate Lighthouse results.
 
 - 
-  ## Lighthouse Testing
+  ## Test conducted on [03/06/2025] Lighthouse Testing
 
 
 
@@ -149,7 +150,7 @@ To perform an audit:
 2. Navigate to the **Lighthouse** tab.
 3. Select the audit categories and click **Run Audit**.
  ![blogpage Screenshot](img/tests_imgs/screensho-blog-page.png).
-- **Jest:**  
+- **Test conducted on [03/06/2025]Jest:**  
 
 Unit tests were written using **Jest** to ensure the reliability of key interactive features and JavaScript functions.  
 The following areas were covered:
@@ -172,7 +173,7 @@ The following areas were covered:
 All tests passed, confirming that the main interactive features work as intended and edge cases are handled.  
 Test files and results can be found in the `/script/functions.test.js` file.. ![jest test Screenshot](img/tests_imgs/passing-jest-tests.jpg).
 
-## Manual Testing
+## Test conducted on [03/06/2025] Manual Testing
 
 Manual testing was performed on all main pages (Home, Blog, Contact) to ensure functionality, accessibility, and design consistency. Below are the test cases, steps, and results:
 
