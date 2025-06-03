@@ -71,9 +71,9 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 ### Automated Testing
 
-- **W3C Validator:** All HTML and CSS validated, no major errors. ![w3ce Screenshot](img/Screenshotw3ctestingcss.png) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
+- **W3C Validator:** All HTML and CSS validated, no major errors. ![w3ce Screenshot](img/tests_imgs/screenshotw3ctestingcss.png) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
 - 
-- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/jslint-test-pagebottom.png)  ![Jstest Screenshot](jslint-test01.png)
+- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/tests_imgs/jslint-test01.png)  ![Jstest Screenshot](img/tests_imgs/jslint-test-pagebottom.png)
 - 
 - **Lighthouse:** Accessibility, performance, and best practices tested
 - ## Known Issues with Lighthouse Audits
@@ -91,7 +91,7 @@ Stored data in IndexedDB may also influence performance metrics. To prevent this
 
 Following these steps can help ensure more accurate Lighthouse results.
 
-- ![Homepage Screenshot](img/lighthouse-indexpage.png)
+- ![Homepage Screenshot](img/tests_imgs/lighthouse-indexpage.png)
   ## What is Lighthouse Testing?
 
 Lighthouse is an open-source, automated tool developed by Google to evaluate and improve website quality. It audits web pages across five key categories:
@@ -108,13 +108,13 @@ Lighthouse generates a detailed report with scores and actionable recommendation
 
 For best results, run audits in **Incognito Mode** or a profile without extensions to prevent interference with page performance.
 
-- ![contactpage Screenshot](img/lighthouse-contact.png)
+- ![contactpage Screenshot](img/tests_imgs/lighthouse-contact.png)
   ### Running Lighthouse Audits
 To perform an audit:
 1. Open Chrome DevTools (`F12` or `Ctrl + Shift + I`).
 2. Navigate to the **Lighthouse** tab.
 3. Select the audit categories and click **Run Audit**.
--  ![blogpage Screenshot](img/Screensho-blog-page.png).
+-  ![blogpage Screenshot](img/tests_imgs/screensho-blog-page.png).
 - **Jest:**  
 
 Unit tests were written using **Jest** to ensure the reliability of key interactive features and JavaScript functions.  
@@ -136,106 +136,97 @@ The following areas were covered:
   Tests validate that the prize wheel selects a valid prize, prevents multiple spins at once, and handles spin logic correctly.
 
 All tests passed, confirming that the main interactive features work as intended and edge cases are handled.  
-Test files and results can be found in the `/script/functions.test.js` file.. ![jest test Screenshot](img/passing-jest-tests.jpg).
+Test files and results can be found in the `/script/functions.test.js` file.. ![jest test Screenshot](img/tests_imgs/passing-jest-tests.jpg).
 
-### Manual Testing
+## Manual Testing
 
-All interactive features were manually tested on desktop and mobile browsers.  
-Below are the test cases, steps, expected results, and actual outcomes:
+Manual testing was performed on all main pages (Home, Blog, Contact) to ensure functionality, accessibility, and design consistency. Below are the test cases, steps, and results:
 
-#### 1. Navigation Bar
-- **Test:** Click each navigation link (Home, Blog, Contact) on desktop and mobile.
-- **Steps:**  
-  1. Open the site on desktop and mobile.
-  2. Click each navbar link.
-- **Expected:**  
-  - Navigates to the correct page.
-  - Active link is highlighted.
-  - Navbar collapses/expands on mobile.
-- **Result:**  
-  - All links work as expected. Active state is visible. Navbar is responsive.
+---
 
-#### 2. Gallery Slider (Contact Page)
-- **Test:** Use next/prev buttons and hover over gallery images.
-- **Steps:**  
-  1. Hover over gallery images.
-  2. Click next/prev buttons.
-  3. Wait for auto-slide.
-- **Expected:**  
-  - Images scale up on hover.
-  - Only one image is visible at a time.
-  - Next/prev buttons cycle images.
-  - Gallery auto-slides every 5 seconds.
-- **Result:**  
-  - All gallery features work smoothly. No glitches.
+### Home Page
 
-#### 3. Prize Wheel (Spin Wheel)
-- **Test:** Spin the prize wheel on the contact page.
-- **Steps:**  
-  1. Hover over the floating prize wheel to reveal the spin button.
-  2. Click the spin button.
-  3. Enter a name when prompted.
-  4. Observe the spinning animation and prize display.
-- **Expected:**  
-  - Spin button appears on hover.
-  - Prompt for name appears.
-  - Wheel spins and displays a random prize.
-  - Prevents multiple spins at once.
-- **Result:**  
-  - All steps work as expected. User cannot spin without entering a name.
+- **Navigation:**  
+  - All navbar links work and highlight the current page.
+  - Hamburger menu works on mobile.
+    ![manual test Screenshot](img/tests_imgs/screenshot-mobile-mode.png).
 
-#### 4. Contact Form
-- **Test:** Submit the contact form with and without required fields.
-- **Steps:**  
-  1. Try submitting with empty fields.
-  2. Fill in all fields and submit.
-- **Expected:**  
-  - Form does not submit if required fields are empty.
-  - Shows thank you message after successful submission.
-  - Form fields are cleared after submission.
-- **Result:**  
-  - Validation works. Thank you message appears and form resets.
+- **Images & Gallery:**  
+  - All images load and display correctly.
+  - Gallery slider arrows are keyboard and screen reader accessible.
 
-#### 5. Google Map
-- **Test:** Check map loads and marker is visible.
-- **Steps:**  
-  1. Scroll to the map section on the contact page.
-- **Expected:**  
-  - Map loads with correct location and marker.
-- **Result:**  
-  - Map and marker display correctly.
+- **Contrast & Accessibility:**  
+  - Text is readable against backgrounds.
+  - All buttons and links have visible or ARIA labels.
 
-#### 6. Blog Title Hover Effect
-- **Test:** Hover over the first blog image.
-- **Steps:**  
-  1. Hover mouse over the first blog card image.
-- **Expected:**  
-  - Blog title is visually covered/animated.
-- **Result:**  
-  - Effect works as intended.
+---
 
-#### 7. Responsive Design
-- **Test:** Resize browser and test on mobile/tablet.
-- **Steps:**  
-  1. Open site on different devices and resize browser window.
-- **Expected:**  
-  - Layout adapts to all screen sizes.
-  - No horizontal scrolling.
-- **Result:**  
-  - Fully responsive on all tested devices.
+### Blog Page
 
-#### 8. Accessibility
-- **Test:** Navigate using keyboard and screen reader.
-- **Steps:**  
-  1. Use Tab/Shift+Tab to move through links and buttons.
-  2. Check alt text on images.
-- **Expected:**  
-  - All interactive elements are accessible by keyboard.
-  - Images have descriptive alt text.
-- **Result:**  
-  - Accessibility features are present and functional.
+- **Content Structure:**  
+  - Headings follow a logical order (`h1`, `h2`, `h3`).
+  - Blog cards display titles, images, and descriptions.
 
-> **Screenshots of each test and commentary are included in the `/screenshots/testing/` folder.**
+- **Links:**  
+  - All "Holiday Packages" links open in a new tab and have descriptive text.
+
+- **Accessibility:**  
+  - Social media and icon links have `aria-label`.
+  - No skipped heading levels.
+
+- **Contrast:**  
+  - Sufficient contrast for all text and buttons.
+
+---
+
+### Contact Page
+
+- **Contact Form:**  
+  - All fields have labels and required validation.
+    ![manual test Screenshot](img/tests_imgs/contact-form.png).
+    
+  - The submit button is properly labeled and accessible. Upon submission, a message appears at the bottom confirming a response within 5 days.
+    
+    ![manual test Screenshot](img/tests_imgs/response-message-conact-form.png).
+
+- **Gallery Slider:**  
+  - The Prev/Next buttons function correctly.
+  - Each image includes a descriptive alt attribute explaining its content
+    ![manual test Screenshot](img/tests_imgs/screenshot-gallery.png).
+
+- **Map & Video:**  
+  - Google Map loads and is visible proprely.
+  - Video player works and is accessible.
+    ![manual test Screenshot](img/tests_imgs/screenshot-map-andvideo-test.png).
+
+- **Floating Prize Wheel:**  
+  - A successful input confirmation appears upon clicking the prize button.
+     ![manual test Screenshot](img/tests_imgs/prize-request.png).
+    
+  - After an input name is taken, the prize spins correctly
+   
+    ![manual test Screenshot](img/tests_imgs/prize-spining-test.png).
+    
+    The outcome correctly displays the name you provided.
+    
+    ![manual test Screenshot](img/tests_imgs/prize-outcome.png).
+
+- **Footer:**  
+  - When I come across the footer code, all ARIA labels, links, and icons are well-organized..
+
+    ![manual test Screenshot](img/tests_imgs/footer-icons&aria-label (2).png).
+
+---
+
+### Summary
+
+All features were manually tested in Chrome and Edge on desktop and mobile.  
+Accessibility and contrast issues flagged by Lighthouse were fixed.  
+No broken links or missing images were found.  
+All interactive elements are accessible by keyboard and screen reader.
+
+
+> **Screenshots of each test and commentary are included in the `/img/tests_imgs/` folder.**
 
 ---
 
