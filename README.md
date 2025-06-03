@@ -212,16 +212,16 @@ Manual testing was performed on all main pages (Home, Blog, Contact) to ensure f
 - **Footer:**  
   - When I come across the footer code, all ARIA labels, links, and icons are well-organized..
 
-    ![manual test Screenshot](img/tests_imgs/footer-icons&aria-label (2).png).
+    ![manual test Screenshot](img/tests_imgs/footer-icons&aria-label(2).png).
 
 ---
 
 ### Summary
 
-All features were manually tested in Chrome and Edge on desktop and mobile.  
-Accessibility and contrast issues flagged by Lighthouse were fixed.  
+All pages of my milestone were manually tested in Chrome and Edge on desktop and mobile.  
+Accessibility and contrast issues flagged by Lighthouse were fixed recently.  
 No broken links or missing images were found.  
-All interactive elements are accessible by keyboard and screen reader.
+All interactive elements are accessible .
 
 
 > **Screenshots of each test and commentary are included in the `/img/tests_imgs/` folder.**
