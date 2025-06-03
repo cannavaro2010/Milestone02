@@ -91,7 +91,28 @@ Stored data in IndexedDB may also influence performance metrics. To prevent this
 
 Following these steps can help ensure more accurate Lighthouse results.
 
-- ![Homepage Screenshot](img/lighthouse-indexpage.png) ![contactpage Screenshot](img/lighthouse-contact.png) ![blogpage Screenshot](img/Screensho-blog-page.png).
+- ![Homepage Screenshot](img/lighthouse-indexpage.png)
+  ## What is Lighthouse Testing?
+
+Lighthouse is an open-source, automated tool developed by Google to evaluate and improve website quality. It audits web pages across five key categories:
+
+- **Performance**: Analyzes load speed, responsiveness, and efficiency.
+- **Accessibility**: Checks whether the site is usable for people with disabilities.
+- **Best Practices**: Reviews security, coding standards, and modern development techniques.
+- **SEO**: Identifies improvements to help the site rank better in search engines.
+- **Progressive Web App (PWA)**: Evaluates offline capabilities and fast-loading features.
+
+Lighthouse generates a detailed report with scores and actionable recommendations, helping developers optimize their websites for a better user experience. It can be run through Chrome DevTools, a command-line interface, or as a Node.js module.
+
+### Running Lighthouse Audits
+To perform an audit:
+1. Open Chrome DevTools (`F12` or `Ctrl + Shift + I`).
+2. Navigate to the **Lighthouse** tab.
+3. Select the audit categories and click **Run Audit**.
+
+For best results, run audits in **Incognito Mode** or a profile without extensions to prevent interference with page performance.
+
+- ![contactpage Screenshot](img/lighthouse-contact.png) ![blogpage Screenshot](img/Screensho-blog-page.png).
 - **Jest:**  
 
 Unit tests were written using **Jest** to ensure the reliability of key interactive features and JavaScript functions.  
