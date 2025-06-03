@@ -71,10 +71,28 @@ Built with HTML, CSS, Bootstrap, JavaScript, and jQuery, the site is designed fo
 
 ### Automated Testing
 
-- **W3C Validator:** All HTML and CSS validated, no major errors. ![w3ce Screenshot](img/tests_imgs/screenshotw3ctestingcss.png) > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
-- 
-- **JSLint:** JavaScript passes linter with no major issues. ![Jstest Screenshot](img/tests_imgs/jslint-test01.png)  ![Jstest Screenshot](img/tests_imgs/jslint-test-pagebottom.png)
-- 
+- **W3C Validator:**
+  
+- > Note: The only CSS validation error reported by W3C is from the external Font Awesome CDN stylesheet, not from my own CSS code. All custom CSS passes validation..
+  ![w3ce Screenshot](img/tests_imgs/screenshotw3ctestingcss.png)
+- All HTML and CSS validated, no major errors.
+- The test thoroughly evaluates all CSS measures.
+- It ensures that CSS codes are unique and do not conflict with Bootstrap classes.
+- The contract is checked to ensure it meets high standards for user experience.
+- Colors are selected to be visually comfortable and non-straining for users' eyes
+
+
+  
+- **JSLint:** JavaScript passes linter with no major issues.
+- **Syntax Errors:** Detects if there is a missing brackets, or incorrect variable declarations, and other syntax-related mistakes.
+- **Unused Variables:** checking for flags variables that are declared but never used in the code.
+- **Global Variables:** spot any identifies unintended global variables that may lead to conflicts.
+- **Coding Style:** Ensures consistent indentation, spacing, and formatting based on best practices.
+- **Potential Bugs:** Warns about issues like missing semicolons, accidental assignments in conditional statements, and unreachable code.
+- **ECMAScript Compatibility:** find out about any highlights deprecated features or syntax that might not work across all JavaScript versions.
+
+   ![Jstest Screenshot](img/tests_imgs/jslint-test01.png)  ![Jstest Screenshot](img/tests_imgs/jslint-test-pagebottom.png)
+  
 - **Lighthouse:** Accessibility, performance, and best practices tested
 - ## Known Issues with Lighthouse Audits
 
@@ -107,9 +125,14 @@ Following these steps can help ensure more accurate Lighthouse results.
 - I added alt descriptions for all images, ensuring better accessibility for visually impaired users.
   ![aria label Screenshot](img/tests_imgs/lighthouse-labels.png)
   ![alt  Screenshot](img/tests_imgs/lighthouse-css.png)
+  ![alt  Screenshot](img/tests_imgs/lighthouse-accessibility.png)
 
 - **Best Practices**: Reviews security, coding standards, and modern development techniques.
+![accessibility  Screenshot](img/tests_imgs/lighthouse-bestpractics.png)
+  
 - **SEO**: Identifies improvements to help the site rank better in search engines(google).
+![accessibility  Screenshot](img/tests_imgs/seolighthouse.png)
+  
 - **Progressive Web App (PWA)**: Evaluates offline capabilities and fast-loading features.
 
 Lighthouse generates a detailed report with scores and actionable recommendations, helping developers optimize their websites for a better user experience. It can be run through Chrome DevTools, a command-line interface, or as a Node.js module.
@@ -118,13 +141,13 @@ Lighthouse generates a detailed report with scores and actionable recommendation
 
 For best results, run audits in **Incognito Mode** or a profile without extensions to prevent interference with page performance.
 
-- ![contactpage Screenshot](img/tests_imgs/lighthouse-contact.png)
+![contactpage Screenshot](img/tests_imgs/lighthouse-contact.png)
   ### Running Lighthouse Audits
 To perform an audit:
 1. Open Chrome DevTools (`F12` or `Ctrl + Shift + I`).
 2. Navigate to the **Lighthouse** tab.
 3. Select the audit categories and click **Run Audit**.
--  ![blogpage Screenshot](img/tests_imgs/screensho-blog-page.png).
+ ![blogpage Screenshot](img/tests_imgs/screensho-blog-page.png).
 - **Jest:**  
 
 Unit tests were written using **Jest** to ensure the reliability of key interactive features and JavaScript functions.  
@@ -216,13 +239,13 @@ Manual testing was performed on all main pages (Home, Blog, Contact) to ensure f
 
 ---
 
-### Summary
+### Summary& Testing table
 
 All pages of my milestone were manually tested in Chrome and Edge on desktop and mobile.  
 Accessibility and contrast issues flagged by Lighthouse were fixed recently.  
 No broken links or missing images were found.  
 All interactive elements are accessible .
-
+![table test Screenshot](img/tests_imgs/test-table.png).
 
 > **Screenshots of each test and commentary are included in the `/img/tests_imgs/` folder.**
 
@@ -236,6 +259,7 @@ All interactive elements are accessible .
 - JavaScript (ES6)
 - jQuery 3.7.1
 - Google Maps JavaScript API
+- Copilot AI (just for grammar and phrasing purposes).
 
 ---
 
