@@ -1,7 +1,7 @@
 # Travel Blog - Explore the World 🌍
 
 ## 🔗 Live Project
-- [Live Demo](https://cannavaro2010.github.io/Milestone02/index.html)
+- [Live Demo](https://cannavaro2010.github.io//index.html)
 - [GitHub Repository](https://github.com/cannavaro2010/Milestone02)
 
 ---
